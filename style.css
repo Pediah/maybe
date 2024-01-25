@@ -23,7 +23,7 @@ nav {
 }
 
 nav img {
-    width: 150px; /* Set the width of the logo */
+    width: 200px; /* Set the width of the logo */
 }
 
 .nav-links {
@@ -116,4 +116,37 @@ nav .fas{
     .nav-links ul {
         padding: 30px;
     }
+}
+
+/*mission must not show on mobile*/
+
+.mission{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size:14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.mission-col{
+    flex-basis: 30%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 6px;
+    box-sizing: border-box;
 }

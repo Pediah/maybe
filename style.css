@@ -150,3 +150,9 @@ p{
     padding: 10px 6px;
     box-sizing: border-box;
 }
+/* Add this media query at the end of your CSS */
+@media screen and (max-width: 700px) {
+    .mission {
+        display: none; /* Hide the mission section on screens smaller than 700px */
+    }
+}

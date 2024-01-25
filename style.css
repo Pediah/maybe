@@ -46,7 +46,7 @@ nav img {
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background:#7e0a02;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -82,8 +82,8 @@ nav img {
     cursor: pointer;
 }
 .enrollbtn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #7e0a02;
+    background: #7e0a02;
     transition: 2s;
 }
 nav .fas{
@@ -98,7 +98,7 @@ nav .fas{
     }
     .nav-links{
         position: absolute;
-        background:navy;
+        background:rgb(10, 10, 61);
         height: 100vh;
         width: 200px;
         top:0;

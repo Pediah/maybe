@@ -12,14 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header class="header">
         <nav>
             <a href="index.html"><img src="ACEK.gif" alt="Acek Academy"></a>
-            <div class="nav-links">
-                <i class="fas fa-times"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT US</a></li>
@@ -28,7 +29,7 @@
                     <li><a href="#">GALLERY</a></li>
                 </ul>
             </div>
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" onclick="showwMenu"></i>
         </nav>
         <div class="text-box">
             <h1>Welcome to Acek Academy</h1>

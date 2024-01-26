@@ -194,3 +194,35 @@ nav .fas{
         padding-top: 10px; /* Adjusted padding for smaller screens */
     }
 }
+footer {
+    width: 100%;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+    color: #fff;
+    padding: 50px 0;
+    border-top-left-radius: 50px;
+    font-size: 14px;
+}
+.footer-content{
+    width:95% ;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+}
+.footer-section{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.logo{
+    width: 200px;
+    height: auto;
+    margin-bottom: auto;
+}
+.footer-content h3{
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    margin: 20px;
+}

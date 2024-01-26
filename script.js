@@ -24,3 +24,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
     showWord(); // Start the animation
 });
+

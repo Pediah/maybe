@@ -201,6 +201,7 @@ footer {
     padding: 50px 0;
     border-top-left-radius: 50px;
     font-size: 14px;
+    overflow: hidden;
 }
 .footer-content{
     width:95% ;
@@ -208,9 +209,13 @@ footer {
     display: flex;
     justify-content:space-between;
 }
+
 .footer-section{
     flex-basis: 25%;
     padding: 10px;
+}
+.footer-section:nth-child(2), .footer-section:nth-child(3){
+     flex-basis: 15%;
 }
 .logo{
     width: 200px;
@@ -225,6 +230,7 @@ footer {
 .email-id{
     width: fit-content;
 }
+
 ul li{
     font-style: none;
     margin-bottom: 10px;
@@ -262,8 +268,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+hr{
+    width:90% ;
+    border: 0;
+    margin: 20px auto;
+
+
+}
 .social-icons {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center; /* Center align social icons */
 }
 
@@ -281,6 +294,39 @@ input[type="submit"]:hover {
 }
 
 .copyright {
-    margin-top: 20px;
     text-align: center; /* Center align copyright text */
+    margin-top: 10px;
 }
+@media(max-width: 700px) {
+    footer {
+        padding: 50px 0 100px; /* Increase bottom padding to accommodate the footer content */
+    }
+    .footer-content {
+        flex-wrap: wrap; /* Allow footer content to wrap to the next line */
+        justify-content: center; /* Center align content */
+    }
+
+    .footer-section {
+        flex-basis: 100%; /* Set the width to 100% for smaller screens */
+        margin-bottom: 20px; /* Increase margin between footer sections */
+        text-align: center; /* Center align text */
+    }
+
+    .footer-section:nth-child(2),
+    .footer-section:nth-child(3) {
+        flex-basis: 50%; /* Set the width to 50% for smaller screens */
+        text-align: left; /* Left align text */
+    }
+
+    .footer-section h3 {
+        margin-bottom: 10px; /* Adjust margin for heading */
+        text-align:center; /* Center align "Contact Us" heading */
+    }
+
+    .footer-section .email-id,
+    .footer-section ul {
+        text-align: center; /* Center align contact information and list */
+        margin-left: 0; /* Reset margin for the email-id and ul */
+    }
+}
+

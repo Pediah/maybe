@@ -199,7 +199,10 @@ nav .fas{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 80;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-height: fit-content;
+    margin-bottom: 20px;
 }
 
 .section {
@@ -220,9 +223,8 @@ nav .fas{
     height: 100%; /* Make the content take full height of the section */
 }
 .section-content h2, .section-content p {
-        color: white;
-    }
-
+    color: white;
+}
 .section {
     flex: 1 1 30%;
     margin: 10px;
@@ -252,7 +254,11 @@ nav .fas{
     height: 500px;
     width: auto;
 }
-
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+}
 /* footer*/
 footer {
     width: 100%;

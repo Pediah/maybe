@@ -219,6 +219,9 @@ nav .fas{
     align-items: center; /* Center content horizontally */
     height: 100%; /* Make the content take full height of the section */
 }
+.section-content h2, .section-content p {
+        color: white;
+    }
 
 .section {
     flex: 1 1 30%;

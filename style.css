@@ -273,6 +273,7 @@ nav .fas{
     display: flex;
     flex-wrap: wrap; /* Allow videos to wrap to the next line on smaller screens */
     justify-content: center; /* Center the videos horizontally */
+    height: 90%;
 }
 
 .video-wrapper {
@@ -284,10 +285,48 @@ nav .fas{
 
 .video {
     width: 100%; /* Videos take up 100% of the width within their wrapper */
+    height: 90%;
 }
 
 .description {
     margin-top: 10px;
+}
+/* Center the play button */
+.video::-webkit-media-controls-start-playback-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* For Firefox */
+.video::-moz-media-controls-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 /* footer*/

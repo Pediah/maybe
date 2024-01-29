@@ -467,3 +467,48 @@ hr{
     }
 }
 
+/* about us */
+
+.row{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.management-col{
+    flex-basis: 23%;
+    border-radius: 18px;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.management-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background:transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: #7e0a02;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}

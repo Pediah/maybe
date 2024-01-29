@@ -474,8 +474,12 @@ hr{
 }
 
 /* about us */
+.camprow{
+    padding-top: 50px;
+    height: auto;
+}
 .campus{
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
     padding-top: 50px;

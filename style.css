@@ -157,6 +157,7 @@ nav .fas{
     margin: auto;
     text-align: center;
     padding-top: 40px;
+    transition: transform 0.5s ease;
 }
 
 .mission h1 {
@@ -174,12 +175,12 @@ nav .fas{
 
 .row {
     margin-top: 5%;
-    display: flex;
+    display:flex;
     justify-content: space-between;
 }
 
 .mission-col{
-    flex-basis: 31%;
+    flex-basis: 24%;
     background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -195,9 +196,22 @@ h3{
 .mission-col:hover{
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
+.mission:nth-child(-n+3) {
+    display: block;
+    transform: translateX(0);
+  }
+  
+  /* Move the hidden section to the left to create a sliding effect */
+  .mission:nth-child(n+4) {
+    transform: translateX(-100%);
+  }
 @media(max-width: 700px) {
     .row{
         flex-direction: column;
+        display: flex;
+    }
+    .mission-col{
+        flex-basis: 31%;
     }
 }
 /* 3 sections*/
@@ -474,6 +488,11 @@ hr{
 }
 
 /* about us */
+.rows {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
 .camprow{
     padding-top: 50px;
     height: auto;

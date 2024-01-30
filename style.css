@@ -544,3 +544,53 @@ hr{
     bottom: 49%;
     opacity: 1;
 }
+/*gallery*/
+
+/* Your existing styles for the body, etc. */
+
+#image-slider-section {
+    margin: 20px; /* Adjust margin as needed */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #f0f0f0; /* Set a background color if desired */
+}
+
+#slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#image-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    outline: none;
+    user-select: none;
+    z-index: 1;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Additional styles for the section if needed */
